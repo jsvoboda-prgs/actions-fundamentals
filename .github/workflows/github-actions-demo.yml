@@ -18,9 +18,9 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.event_name }}"
+      - run: echo "Event name is ${{ github.event_name }}"
 
-      - run: echo "${{ github.ref }}"
+      - run: echo "Branch is ${{ github.ref }}"
 
       - uses: actions/checkout@v4
 
