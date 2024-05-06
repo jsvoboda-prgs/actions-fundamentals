@@ -6,7 +6,7 @@ on:
       bool_value:
         description: A boolean value
         required: true
-        type: bool
+        type: boolean
 
 jobs:
   hello:
