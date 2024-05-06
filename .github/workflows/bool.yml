@@ -1,0 +1,16 @@
+name: Boolean test
+
+on:
+  workflow_dispatch:
+    inputs:
+      bool_value:
+        description: A boolean value
+        required: true
+        type: bool
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    if: inputs.bool_value
+    steps:
+      - run: echo "Hello, world!"
